@@ -476,7 +476,7 @@ module.exports = (function () {
                 var token = _getToken.call(auth)
 
                 if (token && auth.getOption('authType') === 'bearer') {
-                    req.headers.Authorization = 'Bearer: ' + token
+                    req.headers.Authorization = 'Bearer ' + token
                 }
                 
                 return req
